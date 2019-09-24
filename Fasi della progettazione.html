@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fasi Progettazione</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css.map">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="main.js"></script>
+    <title>Vedemo se me riesce</title>
+    <style>
+        h1 {
+            padding-top: 1em;
+            padding-left: 1em;
+            padding-bottom: 1em;
+        }
+        
+        p.e {
+            padding-left: 1em;
+            padding-bottom: 1em;
+            padding-right: 1em;
+        }
+        
+        h1 {
+            font-size: 20px;
+        }
+        
+        .modal-card {
+            width: 80%;
+        }
+        
+        .modal-card-body {
+            margin-bottom: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://www.greenstyle.it/storie/scimmie">
+                <img src="aa.png" style="width: 40px; height: 40px;">
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+          Home
+        </a>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+              Altro
+            </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="Mappa Concettuale.html">
+                Schemi concettuali e logici
+              </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navbar-item">
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>
+        <B>Fasi della progettazione di un Database</B>
+    </h1>
+    <p class="e">
+        Progettazione concettuale, progettazione logica e progettazione fisica sono le 3 fasi principali dello sviluppo di un database, un archivio di dati correlati tra loro e facilmente utilizzabili da un computer.<br> Ecco spiegate le tre fasi principali
+        dello sviluppo di un database:<br><br>
+        <B>Progettazione Concettuale<br></B> Estrapolare dettagli, parole e linguaggio chiaro e comune, comprensibile a tutti, indipendente.<br> 1) Scrivere una descrizione breve ed essenziale del problema<br> 2) Evidenziare tutti i sostantivi e le forme verbali nel testo (evitando duplicati)
+        i sostantivi saranno la base di dati gli oggetti, mentre i verbi le relazioni<br> 3) Non tenere conto di quale tipo di database si vuole creare<br> 4) Dobbiamo concentrarci solo ed esclusivamente sullo strutturare le informazioni
+        <br> Ciò che verrà fuori sarà uno schema concettuale<br> È il livello più vicino all’essere umano e più lontano dal computer. Durante la fase della progettazione concettuale del database, il progettista ha il compito di estrapolare nei dettagli,
+        con parole e linguaggi chiari e comuni, comprensibili a tutti, tutti i dati dell’applicativo da sviluppare. Deve quindi essere realizzata con strumenti indipendenti dall’ambiente e dal sistema di dati che si andrà ad utilizzare durante lo sviluppo.
+        <br><br>
+        <B>Progettazione Logica</B><br> Durante la fase della progettazione logica si traduce lo schema concettuale prodotto nella fase di progettazione concettuale, nel modello di rappresentazione dei dati adottato dall’ambiente database scelto per la programmazione.
+        <br> E’ opportuno cominciare a considerare il tipo di DBMS che vorrò utilizzare. Ad esempio se si tratta di un DBMS relazionale, in questa fase avranno un insieme di relazioni con gli attributi, chiavi primarie ed esterne.<br> La traduzione, per
+        essere formalmente corretta con i software in uso (per utilizzare così il minor numero di spazio e aumentare le velocità di recupero dei dati), porta ad utilizzare la tecnica della normalizzazione che si divide in tre (3) ulteriori livelli: 1ª,
+        2ª e 3ª forma normale.<br> Il prodotto di questa fase è chiamato schema logico.<br><br>
+
+        <B>Progettazione Fisica</B><br> Questo stadio trasforma la struttura ottenuta dalla fase della progettazione logica, con l’obiettivo di conseguire una maggiore efficienza, in aggiunta, con problemi di realizzazione fisica.<br> Se ad esempio stiamo parlando di un database
+        relazionale, la trasformazione della struttura può essere costituita dalla seguente: <br> -Conti e qualsiasi rapporto che è la combinazione di diverse relazioni che sono stati ottenuti nella fase di progettazione logica.<br> -Da un rapporto numero<br>        -Aggiungere un attributo calcolabile per una relazione<br> -Problemi fisici di attuazione (La selezione della dimensione del buffer o le pagine)<br> -Tener conto delle caratteristiche dei processi che query e aggiornare il database, come le strade
+        di accesso che utilizzano e la frequenza di esecuzione.<br> -Considerare i volumi che dovrebbero essere di diversi dati da memorizzare<br> Ogni forma di memorizzazione dipende soprattutto dall’ambiente che si è scelto di utilizzare e i software
+        di gestione dei database si preoccupano di convertire lo schema logico prodotto nella fase di progettazione logica in puntamenti a vettori e “riserva” dello spazio su disco.<br><br>
+        <B>Aspetti metodologici (metodologia)</B><br> La metodologia di progettazione di una base di dati può vedersi quindi come un insieme di attività tra di loro collegate, atte a produrre un insieme di prodotti intermedi e finali utilizzando criteri di verifica (normalizzazione) di qualità
+        delle fasi e dei risultati ottenuti, volti a realizzare un database corretto e funzionale a partire da un insieme di specifiche legate al progetto di partenza.<br></p>
+</body>
+
+</html>
