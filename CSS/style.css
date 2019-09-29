@@ -1,0 +1,11 @@
+.diapositiva {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
